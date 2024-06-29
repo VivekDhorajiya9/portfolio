@@ -28,16 +28,16 @@
 
 	var burgerMenu = function() {
 
-		$('.js-colorlib-nav-toggle').on('click', function(event) {
+		$('.js-theme-nav-toggle').on('click', function(event) {
 			event.preventDefault();
 			var $this = $(this);
 			if( $('body').hasClass('menu-show') ) {
 				$('body').removeClass('menu-show');
-				$('#colorlib-main-nav > .js-colorlib-nav-toggle').removeClass('show');
+				$('#theme-main-nav > .js-theme-nav-toggle').removeClass('show');
 			} else {
 				$('body').addClass('menu-show');
 				setTimeout(function(){
-					$('#colorlib-main-nav > .js-colorlib-nav-toggle').addClass('show');
+					$('#theme-main-nav > .js-theme-nav-toggle').addClass('show');
 				}, 900);
 			}
 		})
@@ -87,8 +87,8 @@
 	};
 
 	var counterWayPoint = function() {
-		if ($('#colorlib-counter').length > 0 ) {
-			$('#colorlib-counter').waypoint( function( direction ) {
+		if ($('#theme-counter').length > 0 ) {
+			$('#theme-counter').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 					setTimeout( counter , 400);					
