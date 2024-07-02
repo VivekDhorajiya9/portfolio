@@ -964,7 +964,7 @@ header .theme-navbar-brand .theme-logo:focus {
 
 .work-entry .work-img {
   width: 100%;
-  height: 700px;
+  height: 100%;
   margin-bottom: 40px;
   display: table;
   text-align: center;
@@ -974,7 +974,7 @@ header .theme-navbar-brand .theme-logo:focus {
 .work-entry .work-img .display-t {
   display: table-cell;
   vertical-align: middle;
-  height: 700px;
+  height: 500px;
   position: relative;
   z-index: 0;
 }
